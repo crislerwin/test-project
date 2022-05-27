@@ -1,4 +1,3 @@
-import { type } from "os";
 import { useReducer } from "react";
 import styled from "styled-components";
 type Reducer<S, A> = (prevState: S, action: A) => S;
@@ -16,6 +15,8 @@ enum ActionType {
   DECREMENT = "decrement",
   INPUT = "input",
   COLOR = "color",
+  SUM = "sum",
+  RESET = "reset",
 }
 const reducer: Reducer<State, Action> = (state, action): State => {
   switch (action.type) {
@@ -27,6 +28,10 @@ const reducer: Reducer<State, Action> = (state, action): State => {
       return { ...state, input: action.payload };
     case ActionType.COLOR:
       return { ...state, color: !state.color };
+    case ActionType.SUM:
+      return { ...state, count: state.count + Number(state.input) };
+    case ActionType.RESET:
+      return { ...state, count: 0, input: "" };
 
     default:
       throw new Error();
@@ -49,7 +54,7 @@ const ReducerScreen = () => {
       <h1>Reducer {`${state.count} ${state.input} ${state.color}`} </h1>
       <Input
         type="text"
-        placeholder="Enter your name"
+        placeholder="Enter your 321312me"
         onChange={(e) =>
           dispatch({ type: ActionType.INPUT, payload: e.target.value })
         }
@@ -62,6 +67,10 @@ const ReducerScreen = () => {
       </Button>
       <Button onClick={() => dispatch({ type: ActionType.COLOR })}>
         Toggle
+      </Button>
+      <Button onClick={() => dispatch({ type: ActionType.SUM })}>Sum</Button>
+      <Button onClick={() => dispatch({ type: ActionType.RESET })}>
+        Reset
       </Button>
     </Container>
   );

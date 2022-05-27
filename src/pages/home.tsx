@@ -1,12 +1,7 @@
-import { useState } from "react";
-import { useParams, useNavigate, Location } from "react-router-dom";
-import { pages } from "../database/pages";
-import { NotionEmbeed } from "../components/NotionEmbeed";
+import Table from "../components/Table";
 
-const Notion = () => {
-  const { id: pageId } = useParams();
-
-  return <>{pageId && <NotionEmbeed pageId={pageId} />}</>;
+const Home = () => {
+  return <Table />;
 };
 
-export default Notion;
+export default Home;
