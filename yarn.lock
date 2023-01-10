@@ -595,10 +595,10 @@ convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
-core-js@^3.0.0, core-js@^3.6.4:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.22.4.tgz#f4b3f108d45736935aa028444a69397e40d8c531"
-  integrity sha512-1uLykR+iOfYja+6Jn/57743gc9n73EWiOnSJJ4ba3B4fOEYDBv25MagmEZBxTp5cWq4b/KPx/l77zgsp28ju4w==
+core-js@^3.0.0:
+  version "3.27.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.27.1.tgz#23cc909b315a6bb4e418bf40a52758af2103ba46"
+  integrity sha512-GutwJLBChfGCpwwhbYoqfv03LAfmiz7e7D/BNxzeMxwQf10GRSzqiOjx7AmtEk+heiD/JWmBuyBPgFtx0Sg1ww==
 
 css-color-keywords@^1.0.0:
   version "1.0.0"
@@ -637,9 +637,9 @@ detect-node@^2.0.4, detect-node@^2.1.0:
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
 
 dompurify@^2.1.1:
-  version "2.3.6"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.3.6.tgz#2e019d7d7617aacac07cbbe3d88ae3ad354cf875"
-  integrity sha512-OFP2u/3T1R5CEgWCEONuJ1a5+MFKnOYpkywpUSxv/dj1LeBT1erK+JwM7zK0ROy2BRhqVCf0LRw/kHqKuMkVGg==
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-2.4.3.tgz#f4133af0e6a50297fc8874e2eaedc13a3c308c03"
+  integrity sha512-q6QaLcakcRjebxjg8/+NP+h0rPfatOgOzc46Fst9VAA3jF2ApfKBNKMzdP4DYTqtUMXSCd5pRS/8Po/OmoCHZQ==
 
 electron-to-chromium@^1.4.118:
   version "1.4.136"
@@ -839,16 +839,16 @@ globals@^11.1.0:
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
 handsontable@*:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/handsontable/-/handsontable-12.0.0.tgz#9649202410920839c7faa26ff25d8979d56db445"
-  integrity sha512-3DLHhp2yTowG2d+KKsL/oodNVyHtgT5q0H+7LiZZKCsVeDNw6iifuOexU8D5Sh3aSPY1P9x3siTlCw4jo9obxg==
+  version "12.3.0"
+  resolved "https://registry.yarnpkg.com/handsontable/-/handsontable-12.3.0.tgz#4acd9a2f2227774e7fc5803b5e52c2825b5d2c2d"
+  integrity sha512-h4bXHT8eKzxlMQAzuBno6dJxayVOjoAjn/cSCsivNqgV3T5GtYiJyVc4CPYxcBqaJ8XD1/OOT0DU9vPjV9QWzQ==
   dependencies:
     "@types/pikaday" "1.7.4"
     core-js "^3.0.0"
     dompurify "^2.1.1"
-    moment "2.29.3"
+    moment "2.29.4"
     numbro "2.1.2"
-    pikaday "1.8.0"
+    pikaday "1.8.2"
   optionalDependencies:
     hyperformula "^2.0.0"
 
@@ -879,17 +879,13 @@ hoist-non-react-statics@^3.0.0, hoist-non-react-statics@^3.3.0:
     react-is "^16.7.0"
 
 hyperformula@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/hyperformula/-/hyperformula-2.0.0.tgz#a7a12a52d620ec4b241ccae4172521d2ad223b39"
-  integrity sha512-h6T4nrflkLoCUBF++PI5JrCzwjNptvTI8XcMK3zLmxOGJRDxEVAWSijjryX04eSyIqqCZjhMX8TFNJRr3t4OJg==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/hyperformula/-/hyperformula-2.3.0.tgz#8f2679ded48807033fc228870fb44345f85bd1c8"
+  integrity sha512-23hP3/+jq8PzEqcu94JYRugaPU2VGSg2OOuYKeVTiPh7c6JYw71wWteXr2Q3CbSiccmtjfF3EqaA8NrmkJyA1w==
   dependencies:
     chevrotain "^6.5.0"
-    core-js "^3.6.4"
-    regenerator-runtime "^0.13.3"
     tiny-emitter "^2.1.0"
     unorm "^1.6.0"
-  optionalDependencies:
-    fsevents "~2.3.2"
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -975,10 +971,10 @@ minimatch@^3.1.1:
   dependencies:
     brace-expansion "^1.1.7"
 
-moment@2.29.3, moment@>=2.14.0:
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
-  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
+moment@2.29.4, moment@>=2.14.0:
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 ms@2.1.2:
   version "2.1.2"
@@ -1041,10 +1037,10 @@ picomatch@^2.2.2, picomatch@^2.3.0:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-pikaday@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/pikaday/-/pikaday-1.8.0.tgz#ce930e257042e852e6aadee1115e01554b2d71c5"
-  integrity sha512-SgGxMYX0NHj9oQnMaSyAipr2gOrbB4Lfs/TJTb6H6hRHs39/5c5VZi73Q8hr53+vWjdn6HzkWcj8Vtl3c9ziaA==
+pikaday@1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/pikaday/-/pikaday-1.8.2.tgz#72cc73fab7ccc068cbdf7dcaa1ce400fcfd894e3"
+  integrity sha512-TNtsE+34BIax3WtkB/qqu5uepV1McKYEgvL3kWzU7aqPCpMEN6rBF3AOwu4WCwAealWlBGobXny/9kJb49C1ew==
 
 postcss-value-parser@^4.0.2:
   version "4.2.0"
@@ -1121,7 +1117,7 @@ react@^18.0.0:
   dependencies:
     loose-envify "^1.1.0"
 
-regenerator-runtime@^0.13.3, regenerator-runtime@^0.13.4:
+regenerator-runtime@^0.13.4:
   version "0.13.9"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
